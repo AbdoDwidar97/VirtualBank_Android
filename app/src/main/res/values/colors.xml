@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="BtnLogin">#32973d</color>
+    <color name="BtnCreate">#6f30d4</color>
+    <color name="BtnForMain">#ea485566</color>
+    <color name="TxtColor">#ffffff</color>
+    <color name="TxtBlack">#000000</color>
+    <color name="TxtGreen">#115b14</color>
+    <color name="TxtNbeti">#491017</color>
+</resources>

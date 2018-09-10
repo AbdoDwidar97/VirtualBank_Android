@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abdelrahman.virtualbank.Deposits">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello ,"
+        android:id="@+id/VwShowUserName"
+        android:textSize="24dp"
+        android:textColor="@color/TxtBlack"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:id="@+id/VwTxtShowUserName"
+        android:textSize="24dp"
+        android:layout_toRightOf="@+id/VwShowUserName"
+        android:textColor="@color/TxtNbeti"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Balance: "
+        android:id="@+id/VwShowBalance"
+        android:textSize="24dp"
+        android:textColor="@color/TxtBlack"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/VwShowUserName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:id="@+id/VwTxtShowBalance"
+        android:textSize="24dp"
+        android:layout_toRightOf="@+id/VwShowBalance"
+        android:textColor="@color/TxtGreen"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/VwShowUserName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:id="@+id/VwDollar"
+        android:textSize="24dp"
+        android:textColor="@color/TxtBlack"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/VwTxtShowBalance"
+        android:layout_below="@+id/VwShowUserName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VwDepAmount"
+        android:text="Enter Amount : "
+        android:textSize="24dp"
+        android:layout_below="@+id/VwShowBalance"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtAmount"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/TxtBlack"
+        android:layout_below="@+id/VwDepAmount"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/BtnSaveDep"
+        android:textAllCaps="false"
+        android:text="Save deposit operation"
+        android:textSize="22dp"
+        android:layout_below="@+id/TxtAmount"
+        android:layout_margin="14dp"
+        android:background="@color/BtnLogin"
+        android:textColor="@color/TxtColor"
+        android:onClick="SaveDeposit"
+        />
+
+    <ListView
+        android:id="@+id/LvDeps"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/BtnSaveDep"
+        android:layout_margin="10dp"
+        android:layout_height="360dp">
+
+    </ListView>
+</RelativeLayout>

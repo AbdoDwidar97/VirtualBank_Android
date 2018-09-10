@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abdelrahman.virtualbank.Main">
+
+
+    <Button
+        android:id="@+id/Btn_Deposits"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:text="Deposits"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        android:background="@color/BtnForMain"
+        android:textColor="@color/TxtColor"
+        android:onClick="GoDeposits"
+        />
+
+    <Button
+        android:id="@+id/Btn_Withdrawals"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:text="Withdrawals"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        android:background="@color/BtnForMain"
+        android:textColor="@color/TxtColor"
+        android:onClick="GoWithdrawals"
+        />
+
+    <Button
+        android:id="@+id/Btn_Info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:text="Info"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        android:background="@color/BtnForMain"
+        android:textColor="@color/TxtColor"
+        android:onClick="GoInfo"
+        />
+
+    <Button
+        android:id="@+id/SignOut"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        android:background="@color/BtnForMain"
+        android:textColor="@color/TxtColor"
+        android:onClick="GoSignOut"
+        />
+</LinearLayout>
